@@ -1,8 +1,8 @@
-# DOCKER CUSTOM PHP IMAGE
-Custom `PHP` image with basic `PHP` extensions and custom `PHP` configurations `php.ini`
+# DOCKER CUSTOM PHP-FPM IMAGE
+Custom `PHP-FPM` image with basic `PHP` extensions and custom `PHP` configurations `php.ini`
 
-## Versions of Base Images
- * `php:7.3-fpm` customised see `dockerfile` for more details
+## Version of Base Image
+ * `php:7.3-fpm` customized see `dockerfile` for more details
 
 ## Installation or Download
 Copy the current `php-fpm`folder into your machine as it is
@@ -11,10 +11,14 @@ Copy the current `php-fpm`folder into your machine as it is
 * PHP image can be modified as required eg installation of PHP extensions which can be specified in [dockerfile]. 
 See [docker-php-extension-installer] for more details on PHP extensions.
 * PHP custom configurations can be provided in [custom_php.ini] or as a separate file inside the [customPHPConf] folder.
- 
+
+## PreBuild image
+Pre build image can be downloaded as well if no changes are required in the image
+```
+docker pull syedusmanali/php-fpm
+``` 
 ## Building the image
 Inside the terminal window go to the base folder of dockerfile by running
-
 ```
 cd [basepath]/php-fpm
 ```
@@ -22,7 +26,6 @@ And to create the image Run
 ```
 docker build -t syedusmanali/php-fpm .
 ``` 
-
 
 ## Running Container
 We will use PHP-FPM with NGINX to serve our PHP app. Doing so will allow us to setup more complex configuration, serve static assets using NGINX.
@@ -131,5 +134,5 @@ $ docker exec -it phpfpm bash
 ```
 [docker-php-extension-installer]: https://github.com/mlocati/docker-php-extension-installer
 [custom_php.ini]: customPHPConf/custom_php.ini
-[dockerfile]:dockerfile
+[dockerfile]:DockerFile
 [customPHPConf]: customPHPConf
