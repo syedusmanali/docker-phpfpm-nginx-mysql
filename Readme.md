@@ -1,5 +1,5 @@
-# DOCKER PHP NGINX MYSQL 
-Simple docker-compose based configurations with the base images of `NGINX`, `MYSQL`, and a custom image of `PHP`.
+# DOCKER PHP-FPM NGINX MYSQL 
+Simple docker-compose based configurations with the base images of `NGINX`, `MYSQL`, and a custom image of `PHP-FPM`.
 Ideal for the development environment, can be used in production with small changes eg. for WordPress.
 
 ## Versions of Base Images
