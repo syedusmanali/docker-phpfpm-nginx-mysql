@@ -36,9 +36,9 @@ services:
       - mycustomnetwork
     environment:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-rootpassword}
-      MYSQL_DATABASE: ${MYSQL_ROOT_PASSWORD:-mydatabase}
-      MYSQL_USER: ${MYSQL_ROOT_PASSWORD:-siteusername}
-      MYSQL_PASSWORD: ${MYSQL_ROOT_PASSWORD:-sitepassword}
+      MYSQL_DATABASE: ${MYSQL_DATABASE:-mydatabase}
+      MYSQL_USER: ${MYSQL_USER:-siteusername}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:-sitepassword}
 volumes:
   database_data:
     driver: local
