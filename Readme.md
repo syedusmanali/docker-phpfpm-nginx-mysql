@@ -26,10 +26,10 @@ See [docker-php-extension-installer] for more details on PHP extensions.
     * MYSQL_PASSWORD=`sitepassword`
  
 ## Running the containers
-Inside the terminal window go to  `dockerphpnginxmysql` base folder by running
+Inside the terminal window go to  `docker-phpfpm-nginx-mysql` base folder by running
 
 ```
-cd [basepath]/dockerphpnginxmysql
+cd [basepath]/docker-phpfpm-nginx-mysql
 ```
 Next to bring the containers up, Run 
 ```
