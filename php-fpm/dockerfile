@@ -6,7 +6,7 @@ ADD https://raw.githubusercontent.com/mlocati/docker-php-extension-installer/mas
 RUN chmod uga+x /usr/local/bin/install-php-extensions && sync && \
     install-php-extensions mysqli gd ssh2 zip imagick exif
 
-ADD custom_php.ini  /usr/local/etc/php/conf.d/
+ADD customPHPConf/  /usr/local/etc/php/conf.d/
 
 WORKDIR /var/www/codebase
 RUN chown -R www-data:www-data /var/www/codebase

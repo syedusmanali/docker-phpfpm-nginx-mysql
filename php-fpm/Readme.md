@@ -8,9 +8,9 @@ Custom `PHP` image with basic `PHP` extensions and custom `PHP` configurations `
 Copy the current `php-fpm`folder into your machine as it is
 
 ## Configurations
-* PHP image can be modified as required eg installation of PHP extensions which can be specified in `php-fpm/dockerfile`. 
+* PHP image can be modified as required eg installation of PHP extensions which can be specified in [dockerfile]. 
 See [docker-php-extension-installer] for more details on PHP extensions.
-* PHP custom configurations can be provided in `php-fpm/custom_php.ini`.
+* PHP custom configurations can be provided in [custom_php.ini] or as a separate file inside the [customPHPConf] folder.
  
 ## Building the image
 Inside the terminal window go to the base folder of dockerfile by running
@@ -130,3 +130,6 @@ Now the application should be accessible at `http://localhost`
 $ docker exec -it phpfpm bash
 ```
 [docker-php-extension-installer]: https://github.com/mlocati/docker-php-extension-installer
+[custom_php.ini]: customPHPConf/custom_php.ini
+[dockerfile]:dockerfile
+[customPHPConf]: customPHPConf
