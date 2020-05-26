@@ -14,7 +14,7 @@ git clone https://github.com/syedusmanali/docker-phpfpm-nginx-mysql.git
 ```
 
 ## Configurations
-* At image build time, PHP image can be modified as required eg installation of PHP extensions which can be specified in `php-fpm/dockerfile`.
+* At image build time, PHP image can be modified as required eg installation of PHP extensions which can be specified in [dockerfile].
 See [docker-php-extension-installer] for more details on PHP extensions. 
 * At image build time, for PHP custom configurations can be provided in [custom_php.ini] or as a separate file inside the [customPHPConf] folder.
 * NGINX configurations can be configured in [mysite.conf] or you can create your own NGINX configuration file inside the [nginx] folder.
@@ -45,4 +45,4 @@ docker-compose up
 [.env.example]: .env.example
 [mysite.conf]: nginx/mysite.conf
 [custom_php.ini]: php-fpm/customPHPConf/custom_php.ini
-[dockerfile]: php-fpm/dockerfile
+[dockerfile]: php-fpm/Dockerfile
