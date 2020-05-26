@@ -10,7 +10,7 @@ Ideal for the development environment, can be used in production with small chan
 ## Installation or Download
 Run
 ```
-git clone https://github.com/syedusmanali/dockerphpnginxmysql
+git clone https://github.com/syedusmanali/docker-phpfpm-nginx-mysql.git
 ```
 
 ## Configurations
